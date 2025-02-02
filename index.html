@@ -21,7 +21,7 @@
             <button class="example-btn" data-example="dictionary">Sözlük Örneği</button>
         </div>
 
-        <textarea id="python-code" placeholder="Write your Python code here..."></textarea>
+        <textarea id="python-code" placeholder="Python kodunuzu buraya yazınız..."></textarea>
 
         <button id="run-button">Kodu Çalıştır ▶️</button>
 
@@ -35,20 +35,20 @@
         import io, sys
 
         examples = {
-            "basic": '''# Hello World Example
+            "basic": '''
 print("Hello from the browser! 👋")
 name = "Alice"
 age = 28
 print(f"{name} is {age} years old. Next year: {age+1}")''',
 
-            "math": '''# Math Operations
+            "math": '''
 import math
 
 radius = 5
 print(f"Area: {math.pi * radius**2:.2f}")
 print(f"Circumference: {2 * math.pi * radius:.2f}")''',
 
-            "dictionary": '''# Dictionary Example
+            "dictionary": '''
 student_grades = {"Math": 90, "Science": 85, "History": 88}
 for subject, grade in student_grades.items():
     print(f"{subject.ljust(10)}: {'⭐' * (grade // 10)}")'''
